@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.math-container{
+    padding: 12px 12px;
+    background-color: #fff;
+    /* width: 350px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.math-container > h1{
+    font-size: 1.5em;
+    text-align: center;
+    color: blue;
+    text-shadow: 2px 1px 3px lightblue;
+}
+.section-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+#question{
+    text-align: center;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    border: 1px dotted black;
+    border-radius: 14px;
+    margin-top: 12px;
+    font-family: monospace;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.answers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    flex-grow: 1;
+}
+span{
+    padding-left: 5px;
+}
+.ans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    margin: 3px 3px;
+    border: 2px solid #333;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    text-align: center;
+    height: 40px;
+    transform: 1s ease-in-out;
+}
+.ans:hover{
+    padding-bottom: 3px;
+    background-color: #333;
+    color: white;
+}
+#startReset{
+    width: 100%;
+    text-align: center;
+    padding: 12px 12px;
+    color: white;
+    background-color: rgb(60, 19, 98);
+    border-radius: 12px;
+    cursor: pointer;
+}
+#startReset:hover{
+    margin-bottom: 1px;
+    background-color: white;
+    color: rgb(60, 19, 98);
+    font-weight: bold;
+    border: 3px solid rgb(60, 19, 98);
+}
+.note{
+    color: grey;
+    font-size: 13px;
+    text-align: center;
+    padding: 12px 12px;
+}
+
+
+#score{
+    display: none;
+}
+#timeLeft{
+    display: none;
+}
+.button{
+    display: flex;
+}
+#gameover{
+    display: none;
+    width: 320px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 20px rgba(0,0,0);
+    text-align: center;
+    align-self: start;
+    height: 150px;
+    align-items: center;
+    background-color: #fff;
+    color:#333;
+    padding-top: 19%;
+    font-size: 1.4rem;
+    justify-content: center;
+}

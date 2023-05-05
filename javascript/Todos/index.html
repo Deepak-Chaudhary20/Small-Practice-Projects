@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do's</title>
+</head>
+
+<body>
+    <div>
+        <h6 class="todos">Today's Plan</h6>
+        <form id="form">
+            <div id="main-section">
+                <div class="search">
+                    <input type="text" class="input" id="todolist">
+                    <button><i class="fa-solid fa-plus" id="search"></i></button>
+                </div>
+                <ul id="adding">
+                    
+                </ul>
+            </div>
+        </form>
+        <div class="note">
+            Note: click on note to marked done. <br>
+            Double click to delete Note.
+        </div>
+    </div>
+    <script>
+        const searchBtn = document.getElementById('search');
+        const searchInput = document.querySelector('.input');
+
+        searchInput.addEventListener('mousedown', function () {
+            searchBtn.classList.add('fa-minus');
+            searchBtn.classList.remove('fa-plus');
+        })
+        searchInput.addEventListener('blur', function () {
+            searchBtn.classList.add('fa-plus');
+            searchBtn.classList.remove('fa-minus');
+        })
+    </script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

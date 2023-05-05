@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+.todos{
+    color: white;
+    opacity: 0.7;
+    font-size: 3rem;
+    font-family: cursive;
+    text-shadow: 3px 0px 2px grey,-5px 1px 13px rgba(217, 255, 25, 0.57);
+    padding: 12px 12px ;
+}
+#main-section > .search > input{
+    height: 43px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+#main-section > .search > input:focus{
+    outline: orange;
+    border: 2px solid orange;
+}
+.search{
+    position: relative;
+}
+.search button{
+    font-size: 30px;
+    background-color: #fff;
+    border: none;
+    top: 5px;
+    color: grey;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+#adding > li{
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+#adding > li.active{
+    text-decoration: line-through;
+}
+#adding{
+    background-color: white;
+    margin-top: 4px;
+    overflow-y: scroll;
+    border-radius: 4px;
+    border: 1px solid grey;
+    color: #7a7878;
+}
+#adding.active{
+    height: auto;
+}
+
+.note{
+    font-size: 10px;
+    color: rgb(50, 49, 49);
+    font-family: sans-serif;
+    padding: 1px 12px;
+}
